@@ -1,0 +1,7 @@
+mysql:9.3.0
+
+ 
+
+COPY mysql/initdb.d/ /docker-entrypoint-initdb.d/
+
+RUN chmod -R 755 /docker-entrypoint-initdb.d
